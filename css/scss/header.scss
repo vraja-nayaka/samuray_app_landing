@@ -1,7 +1,7 @@
 .header {
-	background-color: #fff;
+	background-color: #f8f9fa;
 	.navbar {
-		padding: 40px 0;
+		padding: 40px 20px;
 		&-collapse {
 			align-items: center;
 			justify-content: space-between;
@@ -54,6 +54,7 @@
 		}
 		&__contact {
 			margin-top: 30px;
+	
 		}
 		&__nav, .nav, &__contact {
 			flex-direction: column;
