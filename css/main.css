@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../fonts/Raleway/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("../fonts/Raleway/Raleway-Light.ttf");
+}
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #3c3d42;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+a:hover {
+  color: #55bd7e;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+a:active, a:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0;
+}
+
+ul, li, ul > li {
+  list-style-type: none;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+button {
+  background: none;
+  border: none;
+}
+button:active, button:focus {
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+input, input:hover, input:active {
+  outline: none;
+}
+
+input[type=button], input[type=submit] {
+  cursor: pointer;
+  background: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.header {
+  background-color: #fff;
+}
+.header .navbar {
+  padding: 40px 0;
+}
+.header .navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  margin-right: 30px;
+}
+.header .nav {
+  text-align: center;
+}
+.header .nav__item:not(:last-child) {
+  margin-right: 30px;
+}
+.header .nav__link {
+  font-family: "Raleway-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  color: #3c3d42;
+}
+.header .nav__link:hover {
+  color: #55bd7e;
+}
+.header__contact {
+  display: flex;
+  text-align: center;
+  font-family: "Raleway-Regular", "Arial", sans-serif;
+  font-size: 18px;
+  color: #3c3d42;
+}
+.header__contact .fas:before, .header__contact .far:before {
+  padding-right: 10px;
+}
+.header .contact__phone {
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  .header .nav__item:not(:last-child), .header .contact__phone {
+    margin: 0;
+  }
+  .header .nav__link {
+    font-size: 16px;
+  }
+  .header .navbar {
+    padding: 2% 0;
+  }
+  .header__contact {
+    margin-top: 30px;
+  }
+  .header__nav, .header .nav, .header__contact {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
