@@ -208,7 +208,7 @@ body *::selection {
     font-size: 16px;
   }
   .header .navbar {
-    padding: 2% 0;
+    padding: 2% 20px;
   }
   .header__contact {
     margin-top: 30px;
@@ -347,7 +347,7 @@ body *::selection {
 }
 .features__title {
   text-align: center;
-  width: 65%;
+  width: 100%;
   margin: 0 auto;
 }
 .features__head {
@@ -356,27 +356,29 @@ body *::selection {
 }
 .features__text {
   color: #afb8b8;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .features__types {
-  padding: 20px 0;
-  border-right: 1px solid #dbe2e2;
+  padding: 20px 20px;
+  border-bottom: 1px solid #dbe2e2;
+  display: flex;
+  justify-content: space-evenly;
 }
 .features__types .types__item {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  width: 120px;
   cursor: pointer;
-  margin: 25px 0;
-  padding: 5px 0;
 }
 .features__types .types__item--active {
-  border-right: 10px solid #55bd7e;
+  border-bottom: 10px solid #55bd7e;
 }
 .features__types .types__item--active .types__icon {
   color: #55bd7e;
 }
 .features__types .types__item:hover {
-  border-right: 10px solid #55bd7e;
+  border-bottom: 10px solid #55bd7e;
 }
 .features__types .types__item:hover .types__icon {
   color: #55bd7e;
@@ -388,13 +390,11 @@ body *::selection {
   text-align: center;
 }
 .features__types .types__head {
-  padding-left: 35px;
+  padding-bottom: 0px;
 }
 .features__description {
-  display: flex;
   align-items: center;
-  height: 400px;
-  margin-left: 80px;
+  height: 140px;
 }
 .features__description .description__item {
   display: none;
@@ -402,18 +402,11 @@ body *::selection {
 .features__description .description__item--active {
   display: block;
 }
-.features__description .description__icon {
-  text-align: center;
-  margin-bottom: 60px;
-}
-.features__description .description__icon i {
-  font-size: 220px;
-  color: #55bd7e;
-}
 .features__description .description__head {
   font-family: "Raleway-Bold", sans-serif;
   font-size: 24px;
   color: #636c6c;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .features__description .description__text {
@@ -422,46 +415,83 @@ body *::selection {
   color: #afb8b8;
 }
 
-@media screen and (max-width: 1199px) {
-  .features__description {
-    margin-left: 50px;
-  }
+.subscribe {
+  padding: 90px 0 110px 0;
+  background-color: #f3f5f5;
 }
+.subscribe .row {
+  text-align: center;
+}
+.subscribe i {
+  font-size: 36px;
+  color: #8c9494;
+  padding-right: 15px;
+  cursor: pointer;
+}
+.subscribe__headline {
+  display: inline-block;
+  color: #8c9494;
+  margin-bottom: 50px;
+}
+.subscribe__form-container {
+  display: block;
+  position: relative;
+}
+.subscribe__form-container .subscribe__form-submit {
+  position: absolute;
+  top: 0;
+  right: 14.8%;
+  padding: 0 50px;
+  height: 100%;
+  background: #55bd7e;
+  border: none;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-family: "ProximaNova-Bold", "Arial", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+.subscribe__form-mail {
+  width: 70%;
+  padding: 20px 22% 20px 30px;
+  border: 2px solid #8c9494;
+  border-radius: 40px;
+  font-family: "Raleway-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  color: #8c9494;
+}
+
 @media screen and (max-width: 991px) {
-  .features__description .description__icon {
-    margin-bottom: 30px;
-  }
-  .features__description .description__icon i {
-    font-size: 160px;
+  .subscribe__form-mail {
+    padding-right: 28%;
   }
 }
 @media screen and (max-width: 767px) {
-  .features__types {
-    border-top: 1px solid #dbe2e2;
-    border-right: none;
-    border-bottom: 1px solid #dbe2e2;
+  .subscribe__form-container .subscribe__form-submit {
+    right: -2px;
   }
-  .features__types .types__item {
-    padding: 5px 0 15px 0;
+  .subscribe__form-mail {
+    width: 100%;
+    padding-right: 40%;
   }
-  .features__types .types__item--active {
-    border-right: none;
-    border-bottom: 10px solid #5dca88;
-    padding-bottom: 5px;
+}
+@media screen and (max-width: 575px) {
+  .subscribe i {
+    padding-right: 0;
   }
-  .features__types .types__item:hover {
-    border-right: none;
-    border-bottom: 10px solid #5dca88;
-    padding-bottom: 5px;
+  .subscribe__form-container {
+    display: flex;
+    flex-direction: column;
   }
-  .features__description {
-    margin-left: 0;
+  .subscribe__form-container .subscribe__form-submit {
+    display: inline-block;
+    position: static;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px auto 0 auto;
   }
-  .features__description .description__item {
-    text-align: center;
-  }
-  .features__description .description__icon {
-    margin-top: 45px;
+  .subscribe__form-mail {
+    padding-right: 30px;
   }
 }
 

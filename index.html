@@ -18,7 +18,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <nav class="navbar  navbar-expand-lg bg-light navbar-light">
+          <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light">
             <a class="header__logo logo" href="index.html">Samurai app</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar__content"
               aria-controls="navbar__content" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,35 +80,30 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xl-4 col-lg-5 col-md-6">
-          <div class="features__types">
-            <div class="types__item types__item--active">
-              <div class="types__icon">
-                <i class="fas fa-rocket"></i>
-              </div>
-              <p class="types__head">Easy start</p>
+      <div>
+        <div class="features__types">
+          <div class="types__item types__item--active">
+            <div class="types__icon">
+              <i class="fas fa-rocket"></i>
             </div>
-            <div class="types__item">
-              <div class="types__icon">
-                <i class="fas fa-briefcase"></i>
-              </div>
-              <p class="types__head">Features</p>
+            <p class="types__head">Easy start</p>
+          </div>
+          <div class="types__item">
+            <div class="types__icon">
+              <i class="fas fa-briefcase"></i>
             </div>
-            <div class="types__item">
-              <div class="types__icon">
-                <i class="fas fa-mobile-alt"></i>
-              </div>
-              <p class="types__head">Adaptive design</p>
+            <p class="types__head">Features</p>
+          </div>
+          <div class="types__item">
+            <div class="types__icon">
+              <i class="fas fa-mobile-alt"></i>
             </div>
+            <p class="types__head">Adaptive</p>
           </div>
         </div>
-        <div class="col-xl-8 col-lg-7 col-md-6">
+        <div>
           <div class="features__description">
             <div class="description__item description__item--active">
-              <div class="description__icon">
-                <i class="fas fa-rocket"></i>
-              </div>
               <div class="description__head">Easy start</div>
               <div class="description__text text">
                 <p>
@@ -120,9 +115,6 @@
               </div>
             </div>
             <div class="description__item">
-              <div class="description__icon">
-                <i class="fas fa-briefcase"></i>
-              </div>
               <div class="description__head">Features</div>
               <div class="description__text text">
                 browser-routing, redux-thunk, redux-form validation, login, captcha, REST API, pagination, preloader,
@@ -130,9 +122,6 @@
               </div>
             </div>
             <div class="description__item">
-              <div class="description__icon">
-                <i class="fas fa-mobile-alt"></i>
-              </div>
               <div class="description__head">Adaptive design</div>
               <div class="description__text text">Design that correctly reflects on various devices</div>
             </div>
@@ -141,6 +130,26 @@
       </div>
     </div>
   </section>
+
+	<section class="subscribe">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<label for="getMail"><i class="far fa-envelope"></i></label>
+					<h2 class="subscribe__headline headline">Subscribe our Newsletter</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="subscribe__form-container">
+						<input class="subscribe__form-mail" id="getMail" form="getNews" maxlength="40" type="email" placeholder="your email address" tabindex="1" required>
+						<input class="subscribe__form-submit" form="getNews" type="submit" value="submit" tabindex="2">
+					</div>
+					<form id="getNews" method="post"></form>
+				</div>
+			</div>
+		</div>
+	</section>
 
   <footer class="footer">
     <div class="container">
